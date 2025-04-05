@@ -24,7 +24,7 @@
 }
 .cont button img{
     width: 25px;
-    margin-right: 29px;
+    margin-right: 15px;
     border-radius: 50%;
 
 }
@@ -39,6 +39,28 @@
     border-radius: 40px;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
+}
+.input-box{
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    color: #333;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    outline: none;
+
+
+}
+
+.input-box img{
+    width: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 14px;
     cursor: pointer;
 
 }
