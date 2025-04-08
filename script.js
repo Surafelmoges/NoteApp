@@ -1,15 +1,19 @@
-const notesContainer = document.querySelector('.notes-container');
-const createButton = document.querySelector('.btn');
+const notesCont = document.querySelector('.notes-container');
+const createBtn = document.querySelector('.btn');
+
 let notes = document.querySelectorAll('.input-box');
 
+createBtn.addEventListener('click', () => {
+    let newNote = document.createElement('p');
+    let  img = document.createElement('img');
+    newNote.className = 'input-box';
+    newNote.setAttribute("contenteditable", "true");  // Fixed the typo here
+    //newNote.innerHTML = 'Click here to edit...';  // Placeholder text
+    img.src = 'images/delete.jpg';
 
-createButton.addEventListener("click", ()=> {
-    let inputBox = document.createElement("p");
-    let img = document.createElement("img");
+    notesCont.appendChild(newNote).appendChild(img);
+   // newNote.innerHTML = 'Click edit to here...';
 
-    inputBox.className = "input-box";
-    inputBox.setAttribute("contenteditable", "true");
-    inputBox.setAttribute("placleholder", "Write your note here...");
-    img.src = "images/delete.jpg";
-    notesContainer.appendChild(inputBox).appendChild(img);
+
+
 })
