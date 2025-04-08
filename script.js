@@ -14,6 +14,10 @@ createBtn.addEventListener('click', () => {
     notesCont.appendChild(newNote).appendChild(img);
    // newNote.innerHTML = 'Click edit to here...';
 
+})
 
-
+notesCont.addEventListener('click', function(e) {
+    if(e.target.tagName === 'IMG'){
+        e.target.parentElement.remove();
+    }
 })
